@@ -1,0 +1,25 @@
+/* Import: Fraunces & Outfit from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Outfit:wght@300..700&display=swap');
+
+:root {
+    --bs-body-font-family: 'Outfit', sans-serif;
+    --bs-heading-font-family: 'Fraunces', serif;
+    --font-primary: 'Outfit', sans-serif;
+    --font-secondary: 'Fraunces', serif;
+}
+
+body {
+    font-family: var(--bs-body-font-family) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: var(--bs-heading-font-family) !important;
+    letter-spacing: -0.02em; /* Tweak for Fraunces elegance */
+}
+
+/* Ensure buttons and other elements use the body font */
+.btn, input, textarea, select, button {
+    font-family: var(--bs-body-font-family) !important;
+}
