@@ -88,11 +88,11 @@ export default function MobileMenu() {
               className="h5 text-none text-gray-900 dark:text-white"
             >
               <Image
-                className="w-32px"
-                alt="Lexend"
-                src="/assets/images/common/logo-mark.svg"
-                width="34"
-                height="34"
+                alt="Ebihost"
+                src="/assets/images/common/ebihost-logo.png"
+                width="120"
+                height="40"
+                style={{ objectFit: 'contain' }}
               />
             </Link>
           </div>

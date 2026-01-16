@@ -94,21 +94,14 @@ export default function Header4() {
                   <Link
                     className="panel text-none"
                     href={`/`}
-                    style={{ width: 140 }}
+                    style={{ width: 160 }}
                   >
                     <Image
-                      className="dark:d-none"
-                      alt="Lexend"
-                      src="/assets/images/common/logo-light.svg"
-                      width="117"
-                      height="40"
-                    />
-                    <Image
-                      className="d-none dark:d-block"
-                      alt="Lexend"
-                      src="/assets/images/common/logo-dark.svg"
-                      width="117"
-                      height="40"
+                      alt="Ebihost"
+                      src="/assets/images/common/ebihost-logo.png"
+                      width="160"
+                      height="50"
+                      style={{ objectFit: 'contain' }}
                     />
                   </Link>
                 </div>

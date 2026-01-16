@@ -2,22 +2,22 @@ import Link from "next/link";
 
 const pricingPlans = [
     {
-        name: "Entry",
-        subtitle: "For beginners",
+        name: "AHR1",
+        subtitle: "(25GB) Reseller Hosting",
         description: "Start your hosting business with everything you need to get going.",
-        price: "₦10,000",
+        price: "₦7,450",
         period: "/month",
-        annualPrice: "₦100,000/year",
-        link: "https://my.ebihost.com/index.php?rp=/store/reseller-hosting/entry",
+        link: "https://my.ebihost.com/index.php?rp=/store/reseller-hosting/ahr1",
         features: [
-            "50 cPanel Accounts",
-            "100GB SSD Storage",
-            "Unmetered Bandwidth",
-            "Free WHMCS License",
-            "Free SSL Certificates",
-            "Free cPanel Migrations",
-            "White-label Hosting",
-            "Private Nameservers",
+            "25 GB SSD Storage",
+            "Unlimited Bandwidth",
+            "Free cPanel/WHM",
+            "Unlimited Domains",
+            "15 cPanel Accounts",
+            "CageFS Hack Protection",
+            "DDoS Protection included",
+            "100% Whitelabeled Hosting",
+            "Unlimited FREE SSL Certificates",
         ],
         extras: [
             "24/7 Customer Support",
@@ -26,22 +26,46 @@ const pricingPlans = [
         popular: false,
     },
     {
-        name: "Performance",
-        subtitle: "For growing businesses",
+        name: "AHR2",
+        subtitle: "(50GB) Reseller Hosting",
         description: "More resources and accounts for your expanding hosting business.",
-        price: "₦18,000",
+        price: "₦11,500",
         period: "/month",
-        annualPrice: "₦200,000/year",
-        link: "https://my.ebihost.com/index.php?rp=/store/reseller-hosting/performance",
+        link: "https://my.ebihost.com/index.php?rp=/store/reseller-hosting/ahr2",
         features: [
-            "100 cPanel Accounts",
-            "300GB SSD Storage",
-            "Unmetered Bandwidth",
-            "Free WHMCS License",
-            "Free SSL Certificates",
-            "Free cPanel Migrations",
-            "White-label Hosting",
-            "Private Nameservers",
+            "50 GB SSD Storage",
+            "1TB Bandwidth",
+            "Free cPanel/WHM",
+            "Unlimited Domains",
+            "35 cPanel Accounts",
+            "CageFS Hack Protection",
+            "DDoS Protection included",
+            "100% Whitelabeled Hosting",
+            "Unlimited FREE SSL Certificates",
+        ],
+        extras: [
+            "24/7 Customer Support",
+            "99.9% Uptime Guarantee",
+        ],
+        popular: false,
+    },
+    {
+        name: "AHR3",
+        subtitle: "(75GB) Reseller Hosting",
+        description: "Perfect balance of resources for growing hosting providers.",
+        price: "₦15,750",
+        period: "/month",
+        link: "https://my.ebihost.com/index.php?rp=/store/reseller-hosting/ahr3",
+        features: [
+            "75 GB SSD Storage",
+            "Unlimited Bandwidth",
+            "Free cPanel/WHM",
+            "Unlimited Domains",
+            "50 cPanel Accounts",
+            "CageFS Hack Protection",
+            "DDoS Protection included",
+            "100% Whitelabeled Hosting",
+            "Unlimited FREE SSL Certificates",
         ],
         extras: [
             "Priority 24/7 Support",
@@ -50,22 +74,46 @@ const pricingPlans = [
         popular: true,
     },
     {
-        name: "Business",
-        subtitle: "For established businesses",
-        description: "Unlimited resources for serious hosting providers.",
-        price: "₦28,000",
+        name: "AHR4",
+        subtitle: "(100GB) Reseller Hosting",
+        description: "Robust resources for established hosting businesses.",
+        price: "₦19,800",
         period: "/month",
-        annualPrice: "₦320,000/year",
-        link: "https://my.ebihost.com/index.php?rp=/store/reseller-hosting/business",
+        link: "https://my.ebihost.com/index.php?rp=/store/reseller-hosting/ahr4",
         features: [
-            "Unlimited cPanel Accounts",
-            "Unmetered SSD Storage",
-            "Unmetered Bandwidth",
-            "Free WHMCS License",
-            "Free SSL Certificates",
-            "Free cPanel Migrations",
-            "White-label Hosting",
-            "Private Nameservers",
+            "100 GB SSD Storage",
+            "Unlimited Bandwidth",
+            "Free cPanel/WHM",
+            "Unlimited Domains",
+            "70 cPanel Accounts",
+            "CageFS Hack Protection",
+            "DDoS Protection included",
+            "100% Whitelabeled Hosting",
+            "Unlimited FREE SSL Certificates",
+        ],
+        extras: [
+            "Dedicated 24/7 Support",
+            "99.9% Uptime Guarantee",
+        ],
+        popular: false,
+    },
+    {
+        name: "AHR5",
+        subtitle: "(150GB) Reseller Hosting",
+        description: "Maximum resources for serious hosting providers.",
+        price: "₦28,950",
+        period: "/month",
+        link: "https://my.ebihost.com/index.php?rp=/store/reseller-hosting/ahr5",
+        features: [
+            "150 GB SSD Storage",
+            "Unlimited Bandwidth",
+            "Free cPanel/WHM",
+            "Unlimited Domains",
+            "100 cPanel Accounts",
+            "CageFS Hack Protection",
+            "DDoS Protection included",
+            "100% Whitelabeled Hosting",
+            "Unlimited FREE SSL Certificates",
         ],
         extras: [
             "Dedicated 24/7 Support",
@@ -92,7 +140,7 @@ export default function ResellerHostingPricing() {
                                 Everything you need to start, manage and grow your hosting business.
                             </p>
                         </div>
-                        <div className="row child-cols-12 md:child-cols-6 lg:child-cols-4 g-3 col-match">
+                        <div className="row child-cols-12 md:child-cols-6 lg:child-cols g-3 col-match">
                             {pricingPlans.map((plan, index) => (
                                 <div key={index}>
                                     <div
@@ -106,7 +154,7 @@ export default function ResellerHostingPricing() {
                                                 <h4 className="h5 m-0">{plan.name}</h4>
                                                 {plan.popular && (
                                                     <span className="fs-8 px-2 py-1 bg-white text-primary rounded-pill fw-medium">
-                                                        Popular
+                                                        Featured
                                                     </span>
                                                 )}
                                             </div>
@@ -117,15 +165,10 @@ export default function ResellerHostingPricing() {
                                                 {plan.description}
                                             </p>
                                         </div>
-                                        <div className="vstack gap-0">
-                                            <div className="hstack gap-1 items-end">
-                                                <span className="h3 m-0">{plan.price}</span>
-                                                <span className={`fs-6 ${plan.popular ? "text-white text-opacity-70" : "text-gray-600 dark:text-gray-400"}`}>
-                                                    {plan.period}
-                                                </span>
-                                            </div>
-                                            <span className={`fs-7 ${plan.popular ? "text-white text-opacity-60" : "text-gray-500 dark:text-gray-400"}`}>
-                                                or {plan.annualPrice}
+                                        <div className="hstack gap-1 items-end">
+                                            <span className="h3 m-0">{plan.price}</span>
+                                            <span className={`fs-6 ${plan.popular ? "text-white text-opacity-70" : "text-gray-600 dark:text-gray-400"}`}>
+                                                {plan.period}
                                             </span>
                                         </div>
                                         <Link

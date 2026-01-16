@@ -53,12 +53,13 @@ export default function Header5() {
             >
               <div className="uc-navbar-left">
                 <div className="uc-logo">
-                  <Link className="panel text-none" href={`/`}>
+                  <Link className="panel text-none" href={`/`} style={{ width: 160 }}>
                     <Image
-                      alt="Lexend"
-                      src="/assets/images/common/logo-icon.svg"
-                      width="40"
-                      height="40"
+                      alt="Ebihost"
+                      src="/assets/images/common/ebihost-logo.png"
+                      width="160"
+                      height="50"
+                      style={{ objectFit: 'contain' }}
                     />
                   </Link>
                 </div>
